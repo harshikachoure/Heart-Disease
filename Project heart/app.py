@@ -4,8 +4,8 @@ import joblib
 
 # Load saved model, scaler, and expected columns
 model = joblib.load("Project heart/KNN_heart_model.pkl")
-scaler = joblib.load("heart_scaler.pkl")
-expected_columns = joblib.load("columns.pkl")
+scaler = joblib.load("Project heart/heart_scaler.pkl")
+expected_columns = joblib.load("Project heart/columns.pkl")
 
 st.title("Heart Stroke Prediction by Harshika")
 st.markdown("Provide the following details to check your heart stroke risk:")
@@ -64,5 +64,6 @@ if st.button("Predict"):
     else:
 
         st.success("✅ Low Risk of Heart Disease")
+
 
 
